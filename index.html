@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eventza</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .header {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      position: absolute;
+      width: 100%;
+      top: 40%;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 15s infinite;
+    }
+
+    .slides img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100vw); }
+      66% { transform: translateX(-200vw); }
+      100% { transform: translateX(0); }
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      background-color: #ff5e57;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e14c4c;
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+<div class="slider">
+  <div class="slides">
+    <img src="WhatsApp Image 2025-04-24 at 16.29.17_9e58a810.jpg" alt="Slide 1">
+    <img src="WhatsApp Image 2025-04-24 at 16.29.19_91220945.jpg" alt="Slide 2">
+    <img src="WhatsApp Image 2025-04-24 at 16.29.18_0fa03e28.jpg" alt="Slide 3">
+  </div>
+  <div class="overlay"></div>
+  <div class="header">
+    <h1>Eventza</h1>
+    <button class="btn" onclick="window.location.href='about.html'">Get Started</button>
+</div>
+</div>
+
+</body>
+</html>

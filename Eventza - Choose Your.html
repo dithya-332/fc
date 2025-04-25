@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/techno/Desktop/event%20management/choose.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Eventza - Choose Your</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 20px;
+      color: white;
+    }
+
+    .header h2 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    .auth-buttons button {
+      margin-left: 10px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #ff5e57;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .auth-buttons button:hover {
+      background-color: #e14c4c;
+    }
+
+    .content {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .content h1 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      justify-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .option-card {
+      width: 180px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .option-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .option-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .option-card button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    .option-card button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 768px) {
+      .options-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .options-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Eventza</h2>
+  <div class="auth-buttons">
+    <button onclick="alert(&#39;Sign Up clicked&#39;)">Sign Up</button>
+    <button onclick="alert(&#39;Sign In clicked&#39;)">Sign In</button>
+  </div>
+</div>
+
+<div class="content">
+  <h1>Choose your:</h1>
+  <div class="options-grid">
+
+    <div class="option-card" onclick="location.href=&#39;destination.html&#39;">
+      <img src="./Eventza - Choose Your_files/bamboo-wedding-decor-indian.webp" alt="Destination">
+      <button>Destination</button>
+    </div>
+
+    <div class="option-card" onclick="location.href=&#39;food.html&#39;">
+      <img src="./Eventza - Choose Your_files/images.jpeg" alt="Food and Beverages">
+      <button>Food &amp; Beverages</button>
+    </div>
+
+    <div class="option-card" onclick="location.href=&#39;costume.html&#39;">
+      <img src="./Eventza - Choose Your_files/images (1).jpeg" alt="Costume">
+      <button>Costume</button>
+    </div>
+
+    <div class="option-card" onclick="location.href=&#39;decor.html&#39;">
+      <img src="./Eventza - Choose Your_files/istockphoto-479977238-612x612.jpg" alt="Decor">
+      <button>Decor</button>
+    </div>
+
+    <div class="option-card" onclick="location.href=&#39;media.html&#39;">
+      <img src="./Eventza - Choose Your_files/customized-event-tour-service.jpg" alt="Photo / Videography">
+      <button>Photo / Videography</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+</body></html>
